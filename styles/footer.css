@@ -1,7 +1,11 @@
 .footer {
     height: 200px;
     background-color: var(--footer-background-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 

@@ -1,12 +1,20 @@
 .header {
     height: 100px;
     background-color: var(--nav-background-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: var(--light);
     font-weight: bold;
@@ -20,8 +28,14 @@
 
 .nav_list {
     width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -32,6 +46,8 @@
 
 .nav_dropdown {
     opacity: 0;
+    -webkit-transition: all 5s ease;
+    -o-transition: all 5s ease;
     transition: all .5s ease;
     position: absolute;
     left: calc(50% - 70px);
@@ -42,7 +58,6 @@
     border-radius: 10px;
     background-color: var(--light);
     -webkit-box-shadow: 0px 2px 5px 0px rgba(174, 184, 196, 1);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(174, 184, 196, 1);
     box-shadow: 0px 2px 5px 0px rgba(174, 184, 196, 1);
 }
 

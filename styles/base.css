@@ -2,7 +2,7 @@
     --nav-background-color: #769BC8;
     --aside-background-color: #feeade;
     --footer-background-color: #e2f5ff;
-    --footer-background-article: #D8D8D8;
+    --article-background-color: #D8D8D8;
     --light: #ffffff;
     --dark: #090707;
 }
@@ -14,9 +14,12 @@
 }
 
 .grid-container {
+    display: -ms-grid;
     display: grid;
     height: 100vh;
+    -ms-grid-rows: 1fr 1em 1fr 1em 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 2fr 1em 1fr 1em 1fr;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: "aside header header" "aside article1 article2" "aside article3 article4";
     grid-gap: 1em;

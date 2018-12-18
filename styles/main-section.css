@@ -1,21 +1,33 @@
 .main-section_aside {
     grid-area: aside;
     background-color: var(--aside-background-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .main-section_header {
     grid-area: header;
     background-color: var(--light);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .main-section_article {
-    background-color: var(--footer-background-article);
+    background-color: var(--article-background-color);
 }
 
 .main-section_article1 {
