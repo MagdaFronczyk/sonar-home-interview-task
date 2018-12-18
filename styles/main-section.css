@@ -1,11 +1,17 @@
 .main-section_aside {
     grid-area: aside;
     background-color: var(--aside-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-section_header {
     grid-area: header;
     background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-section_article {

@@ -1,4 +1,10 @@
 .footer {
     height: 200px;
     background-color: var(--footer-background-color);
+    display: flex;
+    align-items: center;
+}
+
+.footer_title {
+    text-align: center;
 }
