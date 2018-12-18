@@ -1,0 +1,73 @@
+.header {
+    height: 100px;
+    background-color: var(--nav-background-color);
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: var(--light);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.nav_title {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.nav_list {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_item {
+    display: inline;
+    position: relative;
+}
+
+.nav_dropdown {
+    display: none;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 40px;
+    color: var(--dark);
+    width: 150px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: var(--light);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(174, 184, 196, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(174, 184, 196, 1);
+    box-shadow: 0px 2px 5px 0px rgba(174, 184, 196, 1);
+}
+
+.active {
+    display: block;
+}
+
+.nav_dropdown:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 10px);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+.dropdown_item:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

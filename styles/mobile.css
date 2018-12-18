@@ -1,0 +1,21 @@
+
+@media all and (max-width: 576px) {
+    .grid-container {
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "aside" "header" "article1" "article2" "article3" "article4";
+        grid-gap: 1em;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .nav_title {
+        margin: 0 auto;
+    }
+}

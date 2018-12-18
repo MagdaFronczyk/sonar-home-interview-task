@@ -1,0 +1,25 @@
+:root {
+    --nav-background-color: #769BC8;
+    --aside-background-color: #feeade;
+    --footer-background-color: #e2f5ff;
+    --footer-background-article: #D8D8D8;
+    --light: #ffffff;
+    --dark: #090707;
+}
+
+.main-width {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "aside header header" "aside article1 article2" "aside article3 article4";
+    grid-gap: 1em;
+    margin: 20px auto;
+    padding: 0 10px;
+}
