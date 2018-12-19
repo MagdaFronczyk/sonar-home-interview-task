@@ -1,6 +1,6 @@
 .footer {
     height: 200px;
-    background-color: var(--footer-background-color);
+    background-color: #e2f5ff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -1,6 +1,6 @@
 .main-section_aside {
     grid-area: aside;
-    background-color: var(--aside-background-color);
+    background-color: #feeade;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -14,7 +14,7 @@
 
 .main-section_header {
     grid-area: header;
-    background-color: var(--light);
+    background-color: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -27,21 +27,17 @@
 }
 
 .main-section_article {
-    background-color: var(--article-background-color);
+    background-color: #D8D8D8;
 }
 
-.main-section_article1 {
-    grid-area: article1;
-}
-
-.main-section_article2 {
-    grid-area: article2;
-}
-
-.main-section_article3 {
-    grid-area: article3;
-}
-
-.main-section_article4 {
-    grid-area: article4;
+.main_section_articles {
+    grid-area: articles;
+    display: -ms-grid;
+    display: grid;
+    height: 100%;
+    -ms-grid-rows: 1fr 1em 1fr 1em;
+    grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1em 1fr 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
 }

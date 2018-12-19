@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropdown = document.querySelector(".nav_dropdown");
 
     for (let link of navLinks) {
-        if (link.nextElementSibling != null) {
+        if (link.nextElementSibling) {
             link.addEventListener("click", function (e) {
                 e.stopPropagation(); //this stops the event from bubbling up to the body
                 dropdown.classList.toggle("active");
